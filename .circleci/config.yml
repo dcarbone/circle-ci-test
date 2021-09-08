@@ -10,5 +10,15 @@ jobs:
           name: "VM env details"
           command: ./whatsit.sh
       - run:
-          name: "Try out Docker"
-          command: docker build -u $(id -u):$(id -g) -t dancarbone/circle-ci-test:latest -f Dockerfile .
+          name: "can has build?"
+          command: docker build -t dancarbone/circle-ci-test:latest -f Dockerfile .
+      - run:
+          name: "can has run?"
+          command: docker run -u $(id -u):$(id -g) dancarbone/circle-ci-test:latest whatsit.sh
+  dostuff:
+    docker:
+      - image: dancarbone/circle-ci-test:latest
+    steps:
+      - run:
+          name: "i dunno does this work?"
+          command: whatsit.sh

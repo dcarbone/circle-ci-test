@@ -1,3 +1,9 @@
 FROM debian:bullseye
 
-RUN echo "Hello world"
+COPY hello.sh ./
+RUN chmod +x hello.sh
+
+COPY whatsit.sh ./
+RUN chmod +x whatsit.sh
+
+ENTRYPOINT [ "hello.sh" ]
