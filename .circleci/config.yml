@@ -14,7 +14,7 @@ jobs:
           command: docker build -t dancarbone/circle-ci-test:latest -f Dockerfile .
       - run:
           name: "can has run?"
-          command: docker run -u $(id -u):$(id -g) dancarbone/circle-ci-test:latest whatsit.sh
+          command: docker run -u $(id -u):$(id -g) dancarbone/circle-ci-test:latest /whatsit.sh
   dostuff:
     docker:
       - image: dancarbone/circle-ci-test:latest
