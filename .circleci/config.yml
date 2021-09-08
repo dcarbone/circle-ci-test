@@ -22,3 +22,10 @@ jobs:
       - run:
           name: "i dunno does this work?"
           command: /whatsit.sh
+
+workflows:
+  version: 2
+  trystuff:
+    jobs:
+      - build
+      - dostuff
