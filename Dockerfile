@@ -6,4 +6,4 @@ RUN chmod +x hello.sh
 COPY whatsit.sh ./
 RUN chmod +x whatsit.sh
 
-ENTRYPOINT [ "hello.sh" ]
+ENTRYPOINT [ "/hello.sh" ]

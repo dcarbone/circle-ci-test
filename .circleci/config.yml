@@ -21,4 +21,4 @@ jobs:
     steps:
       - run:
           name: "i dunno does this work?"
-          command: whatsit.sh
+          command: /whatsit.sh
