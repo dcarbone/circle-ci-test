@@ -11,4 +11,4 @@ jobs:
           command: ./whatsit.sh
       - run:
           name: "Try out Docker"
-          command: docker build -t dancarbone/circle-ci-test:latest -f Dockerfile .
+          command: docker build -u $(id -u):$(id -g) -t dancarbone/circle-ci-test:latest -f Dockerfile .

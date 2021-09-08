@@ -4,7 +4,7 @@ echo "Envvars:"
 printenv
 echo
 
-echo "PWD:":
+echo "PWD:"
 pwd
 echo
 
