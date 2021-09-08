@@ -1,6 +1,6 @@
 FROM debian:bullseye
 
-COPY hello.sh /whatsit.sh
+COPY hello.sh /hello.sh
 RUN chmod +x /hello.sh
 
 COPY whatsit.sh /whatsit.sh
