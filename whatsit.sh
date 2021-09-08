@@ -8,8 +8,7 @@ echo "PWD:":
 pwd
 echo
 
-echo "whoami"
-echo whoami $(id -u) $(id -g)
+echo "whoami: $(whoami); id -u: $(id -u); id -g $(id -g); \$UID: ${UID}; \$GID: ${GID}"
 echo
 
 echo "What's here:"
